@@ -1,0 +1,107 @@
+:root {
+    --color-primario: #1c4fa6;
+    --color-secundario: #F3F3E0;
+    --color-bg: #FADA7A;
+    --bg: #CBDCEB;
+    --text-size: 1.5rem;
+    --color-text: #133E87;
+}
+
+body {
+    font-family: "Parkinsans", serif;
+    background-color: var(--bg);
+    color: var(--color-text);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor {
+    max-width: 80%;
+    width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;  /* Se elimina la altura fija para que se expanda según el contenido */
+}
+
+.encabezado {
+    padding: 10px 0 5px 0;
+}
+
+.agregar {
+    background-color: var(--color-bg);
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 70px;
+}
+
+.agregar input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-secundario);
+    padding-left: 10px;
+}
+
+#input::placeholder {
+    font-size: 1.1rem;
+    color: var(--color-text);
+}
+
+.agregar i {
+    font-size: 45px;
+    color: var(--color-primario);
+}
+
+.agregar i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Sección tareas */
+.tareas h2 {
+    margin-bottom: 20px;
+}
+
+.tareas {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre las tareas */
+    flex-grow: 1;
+    overflow-y: auto; 
+}
+
+.tareas li {
+    background-color: var(--color-text);
+    border-radius: 15px;
+    padding: 10px;
+    color: var(--color-secundario);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px; 
+    gap: 15px; /* Mantiene el espacio entre los íconos y el texto */
+}
+
+
+
+.tareas i:hover {
+    color: var(--color-secundario);
+}
+
+.tachado {
+    text-decoration: line-through;
+    color: var(--color-bg);
+}
+
